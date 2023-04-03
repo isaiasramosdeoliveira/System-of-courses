@@ -15,8 +15,8 @@ const StyleButton = styled.button`
     background: #993636;
   }
 `;
-const Button = ({ text }: any) => {
-  return <StyleButton className="button">{text}</StyleButton>;
+const Button = ({ text, onClick }: any) => {
+  return <StyleButton onClick={onClick} className="button">{text}</StyleButton>;
 };
 
 export default Button;

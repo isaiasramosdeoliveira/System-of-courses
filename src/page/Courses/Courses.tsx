@@ -10,7 +10,7 @@ const Container = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    width: 410px;
     padding: 10px;
     border-radius: 10px;
     margin: auto;

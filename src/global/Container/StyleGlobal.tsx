@@ -7,6 +7,9 @@ const StyleGlobal = createGlobalStyle`
     box-sizing:border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration:none;
+    button{
+        border:none;
+    }
 }
 `;
 
