@@ -6,15 +6,18 @@ import Button from "../../components/Button/Button";
 const Container = styled.section`
   .presentation {
     h1 {
-      font-size: 50px;
+      font-size: 40px;
+    }
+    h3, h1{
+      text-align:center;
     }
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    img,
-    .text {
-      width: 550px;
+    img{
+      margin-top:15px;
+      width: 55%;
     }
   }
   .describes {
@@ -22,9 +25,10 @@ const Container = styled.section`
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    .describe{
-      width:500px;
-      margin-top: 60px;
+    .describe {
+      width: 500px;
+      margin-top: 80px;
+      margin: 40px;
     }
   }
 `;
@@ -64,37 +68,6 @@ const Main = () => {
             nostrum iusto ea necessitatibus eius nihil quibusdam, culpa facere
             obcaecati, quo reprehenderit corrupti voluptates quos aliquam
             laudantium rerum sunt error!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum in
-            illum accusantium rem est ipsam, a blanditiis consectetur porro sed
-            ducimus. Delectus, laudantium! Eum, esse autem deserunt suscipit
-            blanditiis id.
-            <Button text="Ver mais" />
-          </p>
-        </div>
-      </div>
-      <div className="describes">
-        <div className="describe">
-          <h2>Descrição dos cursos.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at
-            nostrum iusto ea necessitatibus eius nihil quibusdam, culpa facere
-            obcaecati, quo reprehenderit corrupti voluptates quos aliquam
-            laudantium rerum sunt error!
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum in
-            illum accusantium rem est ipsam, a blanditiis consectetur porro sed
-            ducimus. Delectus, laudantium! Eum, esse autem deserunt suscipit
-            blanditiis id.
-            <Button text="Ver mais" />
-          </p>
-        </div>
-        <div className="describe">
-          <h2>Descrição dos cursos.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio at
           </p>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum in
