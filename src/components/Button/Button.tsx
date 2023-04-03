@@ -4,9 +4,9 @@ const StyleButton = styled.button`
   cursor: pointer;
   color: white;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   background: #b74545;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border: none;
   border-radius: 10px;
   display: block;
@@ -16,7 +16,7 @@ const StyleButton = styled.button`
   }
 `;
 const Button = ({ text }: any) => {
-  return <StyleButton>{text}</StyleButton>;
+  return <StyleButton className="button">{text}</StyleButton>;
 };
 
 export default Button;

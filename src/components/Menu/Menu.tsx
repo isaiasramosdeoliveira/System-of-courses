@@ -43,9 +43,7 @@ const Header = styled.header`
 
 const Menu = () => {
   const [mode, setMode] = useRecoilState(modeState);
-  const [status, setStatus] = useState(false);
-  console.log(mode);
-  
+  const [status, setStatus] = useState(true);  
   const handleChangeMode = () => {
     setMode(status? ThemeLight: ThemeDark);
     setStatus(status ? false : true);
