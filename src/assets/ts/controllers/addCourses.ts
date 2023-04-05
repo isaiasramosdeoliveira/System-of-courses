@@ -3,7 +3,7 @@ import { ICoruse } from "../../../interfaces/interfaces";
 
 class addCourses {
     static async addCourses(dice: ICoruse) {
-        const response = axios.get("https://my-json-server.typicode.com/isaiasramosdeoliveira/API-System-of-courses/db")
+        const response = axios.post(" http://localhost:3000/courses", dice)
             .then(response => response);
         return response;
     }

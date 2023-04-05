@@ -1,5 +1,5 @@
 export interface ICoruse {
-    id: number,
+    id?: number,
     title: string,
     img: string,
     status: boolean

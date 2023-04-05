@@ -1,0 +1,40 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "React",
+      "img": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg",
+      "status": true
+    },
+    {
+      "id": 2,
+      "title": "Angular",
+      "img": "https://www.vectorlogo.zone/logos/angular/angular-icon.svg",
+      "status": true
+    },
+    {
+      "id": 3,
+      "title": "Vue",
+      "img": "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
+      "status": true
+    },
+    {
+      "title": "Svelte",
+      "img": "https://vectorwiki.com/images/TI19Y__svelte.svg",
+      "status": false,
+      "id": 5
+    },
+    {
+      "title": "Firebase",
+      "img": "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+      "status": false,
+      "id": 6
+    },
+    {
+      "title": "Redux",
+      "img": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+      "status": false,
+      "id": 7
+    }
+  ]
+}

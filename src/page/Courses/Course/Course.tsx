@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { MdFavoriteBorder, MdFavorite } from "react-icons/md";
 import { BsFillTrash3Fill, BsPencilFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../../../components/Button/Button";
+import deleteCourses from "../../../assets/ts/controllers/deleteCourses";
 
 
 const Container = styled.div`
@@ -71,6 +72,11 @@ const Course = ({ id, title, img, status }: any) => {
   const handleChangeFavorite = () => {
     setFavorite(favorite ? false : true);
   };
+  const handleDeleteCourse = (e: any) =>{
+    e.preventDefault();
+    deleteCourses(id);
+    return 
+  }
   return (
     <Container key={id}>
       <div className="presentation">
@@ -83,18 +89,15 @@ const Course = ({ id, title, img, status }: any) => {
           )}
         </button>
       </div>
-      <img
-        src={img}
-        alt={title}
-      />
+      <img src={img} alt={title} />
       <div className="btns">
-        <Link to="/">
+        <Link  to="/">
           <BsPencilFill className="icon" />
         </Link>
         <Link to={`/courses/:${id}`}>
           <Button text="Ver Curso" />
         </Link>
-        <Link to="/">
+        <Link onClick={(e:any) => handleDeleteCourse(e)} to="/">
           <BsFillTrash3Fill className="icon" />
         </Link>
       </div>

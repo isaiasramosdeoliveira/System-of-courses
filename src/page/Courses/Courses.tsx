@@ -37,7 +37,7 @@ const Courses = () => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     async function get() {
-      getCourses().then((res) => setCourses(res.data.courses));
+      getCourses().then((res) => setCourses(res.data));
     }
     get();
   }, []);

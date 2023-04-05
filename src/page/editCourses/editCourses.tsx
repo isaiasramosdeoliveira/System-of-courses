@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { ICoruse } from '../../interfaces/interfaces';
-import addCourses from '../../assets/ts/controllers/addCourses';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import { ICoruse } from "../../interfaces/interfaces";
+import addCourses from "../../assets/ts/controllers/addCourses";
+import { useNavigate } from "react-router-dom";
 
 const Container = styled.section`
   display: flex;
@@ -10,8 +10,8 @@ const Container = styled.section`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  .title{
-    display:block;
+  .title {
+    display: block;
   }
   .form {
     label {
@@ -46,20 +46,22 @@ const Container = styled.section`
 const AddCourses = () => {
   const navigate = useNavigate();
   const handleShippingOfDices = (e: any) => {
-    const inputs = document.querySelectorAll("[data-dice]") as NodeListOf<HTMLInputElement>
+    const inputs = document.querySelectorAll(
+      "[data-dice]"
+    ) as NodeListOf<HTMLInputElement>;
     const dice: ICoruse = {
       title: inputs[0].value,
       img: inputs[1].value,
-      status: false
-    }
+      status: false,
+    };
     addCourses(dice);
-    navigate("/courses")
-    e.preventDefault()
-    return
+    navigate("/courses");
+    e.preventDefault();
+    return;
   };
   return (
     <Container>
-      <h1 className='title'>Adicionar curso</h1>
+      <h1 className="title">Adicionar curso</h1>
       <form className="form" action="">
         <div>
           <input
@@ -87,6 +89,6 @@ const AddCourses = () => {
       </form>
     </Container>
   );
-}
+};
 
-export default AddCourses
+export default AddCourses;

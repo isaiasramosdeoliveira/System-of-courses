@@ -55,7 +55,7 @@ const Menu = () => {
           <Link to="/">
             <FaHome />
           </Link>
-          <Link to="/Courses">
+          <Link to="/courses">
             <BsFillGrid3X3GapFill />
           </Link>
           <Link to="/addCourses">
