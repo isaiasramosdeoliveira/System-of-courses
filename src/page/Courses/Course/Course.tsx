@@ -91,13 +91,13 @@ const Course = ({ id, title, img, status }: any) => {
       </div>
       <img src={img} alt={title} />
       <div className="btns">
-        <Link  to="/">
+        <Link to={`/editCourses/${id}`}>
           <BsPencilFill className="icon" />
         </Link>
         <Link to={`/courses/:${id}`}>
           <Button text="Ver Curso" />
         </Link>
-        <Link onClick={(e:any) => handleDeleteCourse(e)} to="/">
+        <Link onClick={(e: any) => handleDeleteCourse(e)} to="/">
           <BsFillTrash3Fill className="icon" />
         </Link>
       </div>
