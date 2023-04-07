@@ -53,7 +53,7 @@ const EditCourses = () => {
   useEffect(() => {
     async function get() {
       getCourses().then((res) =>
-      setCourses(res.data.filter((course: any) => course.id == id))
+      setCourses(res?.data.filter((course: any) => course.id == id))
       );
     }
     get();

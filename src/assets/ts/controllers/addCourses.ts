@@ -3,9 +3,12 @@ import { ICoruse } from "../../../interfaces/interfaces";
 
 class addCourses {
     static async addCourses(dice: ICoruse) {
-        const response = axios.post(" http://localhost:3000/courses", dice)
-            .then(response => response);
-        return response;
+        try{
+            const response = await axios.post(" http://localhost:3000/courses", dice)
+            return response;
+        } catch(err){
+            console.log(err);
+        }
     }
 }
 

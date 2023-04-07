@@ -35,6 +35,12 @@
       "img": "https://cdn.worldvectorlogo.com/logos/redux.svg",
       "status": false,
       "id": 7
+    },
+    {
+      "title": "MongoDB",
+      "img": "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg",
+      "status": false,
+      "id": 8
     }
   ]
 }

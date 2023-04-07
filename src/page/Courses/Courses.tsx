@@ -4,6 +4,7 @@ import Button from "../../components/Button/Button";
 import Course from "./Course/Course";
 import getCourses from "../../assets/ts/controllers/getCourses";
 import { ICoruse } from "../../interfaces/interfaces";
+import { AxiosResponse } from "axios";
 
 const Container = styled.section`
   input {
@@ -37,7 +38,9 @@ const Courses = () => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
     async function get() {
-      getCourses().then((res) => setCourses(res.data));
+      getCourses().then((res: AxiosResponse | undefined) =>
+        setCourses(res?.data)
+      );
     }
     get();
   }, []);
